@@ -25,6 +25,7 @@ header ul{
 header ul li{
     padding: 10px;
     
+    
 }
 a{
     text-decoration: none;
@@ -126,6 +127,7 @@ h3{
 }
 .intro{
     text-align: center;
+    margin-top: .7rem;
     
 }
 .des{
@@ -143,6 +145,7 @@ h3{
     color: white;
     font-size: .8rem;
     clear: both;
+    
 }
 address{
     background-color: #160101;
@@ -152,8 +155,10 @@ address{
 }
 
 /* SKILLS */
-.skillsHeading{
+.skills{
     background-color: wheat;
+}
+.skillsHeading{
     text-align: center;
 
   
@@ -164,8 +169,51 @@ address{
   
 }
 
-
-
+/* SKILLS LOGO */
+h2{
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 2rem 0 1rem 0;
+}
+.skills-logo{
+    height: 100px;
+    width: 100px;
+    
+}
+.skills-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+.html1{
+    background-color: tomato;
+}
+.css1{
+    background-color: blue;
+}
+.js1{
+    background-color: yellow;
+}
+.python1{
+    background-color: aqua;
+}
+.html1:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.css1:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.js1:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.python1:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 /* MEDIA QUERY */
 
 @media screen and (max-width:850px){
@@ -185,6 +233,7 @@ address{
     .aboutMeImage{
         display: none;
     }
+   
     
 }
 @media screen and (max-width:600px){
@@ -195,5 +244,9 @@ address{
     #image{
         max-width: 100%;
         height:20rem;
+    }
+    .skills-items{
+        flex-direction: column;
+        align-items: center;
     }
 }
