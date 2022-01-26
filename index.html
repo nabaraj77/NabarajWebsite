@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="app.js"></script>
     <title>Nabaraj Dahal</title>
 </head>
 <body>
     <header>
         <nav id="nav-menu">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#mySkills">Skills</a></li>
+                <li><a href="#form">Contact Me</a></li>
             </ul>
         </nav>
         <div class="logo"><a href=""> <img class="logoImage"src="Images/logo.png" alt=""></a> </div>
@@ -26,7 +29,7 @@
             </ul>
         </nav>
     </header>
-    <div class="content" > 
+    <div class="content"  > 
         <div class="detail-wrapper">
             <div class="detail">
                 <h1> Hello My Name is <br>
@@ -40,7 +43,7 @@
             <img id ="image"src="Images/naba.png" alt="naba">
         </div>
     </div>
-    <section class="aboutMe">
+    <section class="aboutMe" id="about">
         <div class="intro">
             <h1 class="main-font">About Me</h1>
             <h3>___Who I am___</h3> 
@@ -63,7 +66,7 @@
     </section>
 </section>
             
-<section class="skills">
+<section class="skills" id="mySkills">
     <div class="skillsHeading">
         <h1 class="main-font">My Skills</h1>
     <h3>___What I can do___</h3>
@@ -90,15 +93,15 @@
         </div>
     </div>  
 </section>
-<form action="">
+<form id="form" action="" name="myForm" method="post">
     <fieldset>
         <legend class="main-font">CONTACT ME</legend>
         <div class="form-wrapper">
         <label for="name">Name</label><br>
-        <input type="text" id="name" name="name" placeholder="Name"><br>
+        <input type="text" id="name" name="name" placeholder="Name" ><br>
         <label for="email">Email</label><br>
         <input type="email" id="email" name="email" placeholder="Email"><br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <textarea id="textarea" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
         
         </div>
         <button class="btn">Submit</button>
