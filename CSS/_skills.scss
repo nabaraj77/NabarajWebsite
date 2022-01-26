@@ -1,0 +1,60 @@
+.skills{
+    background-color: wheat;
+}
+.skillsHeading{
+    text-align: center;
+
+    h1{
+        padding-top: 10px;
+        
+      
+    } 
+}
+h2{
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 2rem 0 1rem 0;
+}
+.skills-logo{
+    height: 100px;
+    width: 100px;
+    
+}
+.skills-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+.html1{
+    background-color: tomato;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+}
+.css1{
+    background-color: blue;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+}
+.js1{
+    background-color: yellow;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+}
+.python1{
+    background-color: aqua;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+}

@@ -1,0 +1,46 @@
+header{
+    display: flex;
+    background-color: #160101; 
+    align-items: center;
+    padding: 10px 0px;
+
+    ul{
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;   
+        
+        li{
+            padding: 10px;       
+        }
+    }
+    a{
+        color: white;
+        text-decoration: none;
+
+        &:hover{
+            color: tomato;
+            text-shadow: 1px 1px green;
+        }
+    }
+    
+}
+.logo{
+    margin: 0 auto;
+}
+
+
+.logoFacebook{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+}
+.logoInstagram{
+    height: 20px;
+    width: 20px;
+    background-color: tomato;
+}
+.logoImage{
+    height: 30px;
+    width: 100px;
+}
