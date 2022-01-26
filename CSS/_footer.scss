@@ -1,14 +1,72 @@
 #footer{
-    background-color: gray;
+    background-color: #160101;
     text-align: center;
     color: white;
     font-size: .8rem;
-    clear: both;
     
 }
 address{
+    padding-top: 3%;
     background-color: #160101;
     color: white;
     font-size: .8rem;
+    font-size: 16px;
+
+}
+form{
+    background-color: white;
+}
+fieldset{
+    margin: 3% 8%;
+    border: 2px solid black;
+    
+}
+legend{
+    color: tomato;
+}
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+label, input, textarea{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+label{
+    font-weight: bold;
+    font-size: 18px;
+}
+input{
+    height: 40px;
+    font-size: 16px;
+    padding: 10px 5px;
+    
+}
+input:hover{
+    background-color: lightblue;
+
+    
+}
+textarea{
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+textarea:hover{
+    margin-bottom: 10px;
+    background-color: lightblue;
+   
+}
+.btn{
+    background-color: black;
+    color: white;
+    border:none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 4px auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 70%;
+
 
 }

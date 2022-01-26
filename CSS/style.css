@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,7 +7,6 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,6 +14,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #eff4fd;
+}
+
+.main-font {
+  font-family: 'Aclonica', sans-serif;
 }
 
 header {
@@ -132,8 +137,11 @@ p {
 }
 
 .aboutMe {
-  background-color: wheat;
   margin-bottom: 2rem;
+  padding-bottom: 10px;
+  -webkit-clip-path: polygon(50% 15%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 15%);
+          clip-path: polygon(50% 15%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 15%);
+  background-color: lightblue;
 }
 
 .aboutMeImage {
@@ -148,7 +156,7 @@ h3 {
 
 .intro {
   text-align: center;
-  margin-top: .7rem;
+  padding-top: 9%;
 }
 
 .des {
@@ -156,14 +164,19 @@ h3 {
   margin-right: 2%;
   font-size: 18px;
   word-break: break-all;
+  padding-top: 1em;
 }
 
 .skills {
   background-color: wheat;
+  -webkit-clip-path: polygon(50% 13%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 13%);
+          clip-path: polygon(50% 13%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 13%);
+  background-color: lightblue;
 }
 
 .skillsHeading {
   text-align: center;
+  margin-top: 8%;
 }
 
 .skillsHeading h1 {
@@ -237,17 +250,84 @@ h2 {
 }
 
 #footer {
-  background-color: gray;
+  background-color: #160101;
   text-align: center;
   color: white;
   font-size: .8rem;
-  clear: both;
 }
 
 address {
+  padding-top: 3%;
   background-color: #160101;
   color: white;
   font-size: .8rem;
+  font-size: 16px;
+}
+
+form {
+  background-color: white;
+}
+
+fieldset {
+  margin: 3% 8%;
+  border: 2px solid black;
+}
+
+legend {
+  color: tomato;
+}
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+label, input, textarea {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input {
+  height: 40px;
+  font-size: 16px;
+  padding: 10px 5px;
+}
+
+input:hover {
+  background-color: lightblue;
+}
+
+textarea {
+  margin-bottom: 10px;
+  padding: 10px 5px;
+}
+
+textarea:hover {
+  margin-bottom: 10px;
+  background-color: lightblue;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 4px auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 70%;
 }
 
 @media screen and (max-width: 850px) {
@@ -277,9 +357,16 @@ address {
   .aboutMeImage {
     display: none;
   }
+  .skillsHeading {
+    padding-top: .1em;
+  }
+  .skills {
+    -webkit-clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 10%);
+            clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 10%);
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -294,13 +381,44 @@ address {
     height: 20rem;
   }
   .skills-items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .skillsHeading {
+    padding-top: 8%;
+  }
+  .intro {
+    text-align: center;
+    padding-top: 12%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skillsHeading {
+    padding-top: 17%;
+  }
+  .intro {
+    text-align: center;
+    padding-top: 23%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .skills-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

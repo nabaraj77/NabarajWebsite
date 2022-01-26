@@ -1,11 +1,14 @@
 .description{
     display: flex;
+    
 }
 
 .aboutMe{
-    
-    background-color: wheat;
     margin-bottom: 2rem;  
+    padding-bottom: 10px;
+    clip-path: polygon(50% 15%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 15%);
+    background-color: lightblue;
+    
     
 }
 .aboutMeImage{
@@ -19,7 +22,8 @@ h3{
 }
 .intro{
     text-align: center;
-    margin-top: .7rem;
+    padding-top: 9%;
+    
     
 }
 .des{
@@ -27,5 +31,6 @@ h3{
     margin-right: 2%;
     font-size: 18px;
     word-break: break-all;
+    padding-top: 1em;
 
 }

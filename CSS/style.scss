@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
     display: flex;
     flex-direction: column;
+    background-color: rgb(239, 244, 253);
       
+}
+.main-font{
+    font-family: 'Aclonica', sans-serif;
 }
 @import "header";
 @import "content";
 @import "aboutMe";
 @import "skills";
 @import "footer";
-@import "mediaQuery"
+@import "mediaQuery";

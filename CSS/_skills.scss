@@ -1,8 +1,13 @@
 .skills{
     background-color: wheat;
+    clip-path: polygon(50% 13%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 13%);
+    background-color: lightblue;
+    
+    
 }
 .skillsHeading{
     text-align: center;
+    margin-top: 8%;
 
     h1{
         padding-top: 10px;
