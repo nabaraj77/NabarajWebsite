@@ -374,6 +374,10 @@ textarea:hover {
     -webkit-clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 10%);
             clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 10%);
   }
+  .upward-arrow {
+    left: 90vw;
+    top: 93vh;
+  }
 }
 
 @media screen and (max-width: 640px) {

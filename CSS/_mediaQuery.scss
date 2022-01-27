@@ -22,7 +22,11 @@
         
         clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0 100%, 0 0, 50% 10%);
     }
-       
+    .upward-arrow{
+        left: 90vw;
+        top: 93vh;
+        
+    }
     
    
     
@@ -48,6 +52,7 @@
         text-align: center;
         padding-top: 12%;
     }
+    
 }
 @media screen and (max-width:500px){
     .skillsHeading{
@@ -57,6 +62,7 @@
         text-align: center;
         padding-top: 23%;
     }
+   
     
 
 
