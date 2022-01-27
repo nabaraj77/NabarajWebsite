@@ -21,17 +21,19 @@ p{
     h1{
         font-size: 25px;
     }
-    a{
+    .downloadBtn{
         text-decoration: none;
         margin-top: 5px;
         text-align: center;
         display: block;
-        height: 22px;
+        height: 30px;
         width: 120px;
         background-color: black;
         color: white;
-        border: 5px solid balck;
-        border-radius: 10px
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: .8em;
+        transition: all 400ms ease-in-out;
     }
 
 }
